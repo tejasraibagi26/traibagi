@@ -62,7 +62,7 @@ export default function About() {
   return (
     <section id="about">
       <div className="container">
-        <h2 className="title">About Me</h2>
+        <div className="title">About Me</div>
         <div className="about-me">
           Hey! I'm a 21 year old developer currently pursuing Master's in
           Computer Science from Stevens Institute of Technology. <br />I love
