@@ -123,3 +123,28 @@
     transform: translateY(0px);
   }
 }
+
+@media screen and (max-width: 800px) {
+  #about .container .title {
+    width: 90%;
+    font-size: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #about .container .about-me {
+    width: 90%;
+    font-size: 1.5em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .landing__container .landing__title {
+    width: 90%;
+    font-size: 2em;
+  }
+  .landing__subtitle {
+    font-size: 0.8em;
+  }
+}

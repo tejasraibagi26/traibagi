@@ -95,3 +95,20 @@
     transform: translateY(0);
   }
 }
+
+@media screen and (max-width: 800px) {
+  .landing__container .landing__title {
+    width: 90%;
+    font-size: 4em;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .landing__container .landing__title {
+    width: 90%;
+    font-size: 2em;
+  }
+  .landing__subtitle {
+    font-size: 0.8em;
+  }
+}
