@@ -64,11 +64,15 @@ export default function About() {
       <div className="container">
         <div className="title">About Me</div>
         <div className="about-me">
-          Hey! I'm a 21 year old developer currently pursuing Master's in
-          Computer Science from Stevens Institute of Technology. <br />I love
-          creating mobile apps and websites. I've been working with ReactJs and
-          Flutter for the past 2 years and growing stronger everyday!
+          Hey! I'm 21 year old developer currently pursuing Master's in Computer
+          Science from Stevens Institute of Technology. I love creating mobile
+          apps and websites. I've been working with ReactJs and Flutter for the
+          past 2 years and growing stronger everyday! Currently looking for an
+          internship.
         </div>
+        {/* <div className="mail">
+          <a href="mailto:traibagi@stevens.edu">Send email</a>
+        </div> */}
         <div className="links">
           <a
             href="https:www.github.com/tejasraibagi26"

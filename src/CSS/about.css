@@ -6,7 +6,7 @@
   justify-content: center;
   align-items: center;
   overflow-x: hidden;
-  background-color: whitesmoke;
+  background-color: #121212;
 }
 
 #about .container .title {
@@ -14,7 +14,8 @@
   font-size: 5rem;
   font-weight: bold;
   line-height: 1.0062em;
-  background: -webkit-linear-gradient(
+  color: white;
+  /* background: -webkit-linear-gradient(
     to right,
     #16222a 0%,
     #3a6073 51%,
@@ -31,7 +32,7 @@
   background-clip: text;
   background-size: 300%;
   -webkit-background-clip: text;
-  -moz-background-clip: text;
+  -moz-background-clip: text; */
   margin: 40px;
   display: flex;
 }
@@ -42,9 +43,30 @@
   font-size: 2.2em;
   text-align: center;
   font-weight: bold;
-  color: #333;
+  color: whitesmoke;
   line-height: 1;
   overflow: hidden;
+}
+
+#about .container .mail {
+  margin-top: 40px;
+  text-decoration: none;
+  list-style: none;
+  padding: 10px;
+  background-color: #444;
+  border-radius: 9px;
+}
+
+#about .container .mail a {
+  color: whitesmoke;
+  font-size: 1em;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+#about .container .mail:hover {
+  background-color: #f1f1f1;
+  transform: scale(1.2);
 }
 
 #about .container .links {
@@ -56,14 +78,14 @@
 
 #about .container .links a {
   padding-right: 20px;
-  color: #333;
+  color: gray;
   transition: 100ms;
 }
 
 #about .container .links a:hover {
   transform-origin: center;
   transform: scale(1.2);
-  color: #12c2e9;
+  color: white;
 }
 
 .anim {
@@ -129,6 +151,17 @@
     opacity: 1;
     transform: scale(1);
     transform: translateY(0px);
+  }
+}
+
+@keyframes moveUp {
+  from {
+    background-color: blue;
+    height: 0px;
+  }
+  to {
+    background-color: blue;
+    height: 100%;
   }
 }
 

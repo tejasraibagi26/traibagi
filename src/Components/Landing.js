@@ -8,9 +8,7 @@ export default function Landing() {
         <h1 className="landing__title anim">
           Hey there, <br></br>I'm Tejas Raibagi and welcome to my portfolio.
         </h1>
-        <p className="landing__subtitle sub-anim">
-          Scroll down to see what I've been up to.
-        </p>
+        <p className="landing__subtitle sub-anim">Scroll down for more.</p>
       </div>
     </section>
   );
