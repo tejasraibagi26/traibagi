@@ -20,6 +20,18 @@
     #3a6073 51%,
     #16222a 100%
   );
+  background-image: -webkit-linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
+  background-image: -moz-linear-gradient(
+    to right,
+    #16222a 0%,
+    #3a6073 51%,
+    #16222a 100%
+  );
   background-clip: text;
   background-size: 300%;
   -webkit-background-clip: text;
