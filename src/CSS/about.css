@@ -32,7 +32,6 @@
   background-size: 300%;
   -webkit-background-clip: text;
   -moz-background-clip: text;
-  -webkit-text-fill-color: transparent;
   margin: 40px;
   display: flex;
 }
