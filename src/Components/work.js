@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "../CSS/work.css";
+import resume from "../Downloads/Raibagi_Tejas.pdf";
 
 export default function Work() {
   useEffect(() => {
@@ -36,8 +37,27 @@ export default function Work() {
       );
     });
 
+    const observer3 = new IntersectionObserver((entires) => {
+      entires.forEach(
+        (entry) => {
+          if (entry.isIntersecting) {
+            setTimeout(() => {
+              entry.target.classList.remove("hide");
+            }, 1100);
+            entry.target.classList.add("text-transform-3");
+          } else {
+            console.log("hide");
+            entry.target.classList.add("hide");
+            entry.target.classList.remove("text-transform-3");
+          }
+        },
+        { threshold: 0.4 }
+      );
+    });
+
     observer.observe(document.querySelector(".work-title"));
     observer2.observe(document.querySelector(".work-details"));
+    observer3.observe(document.querySelector(".resume"));
   });
 
   let descArr = [
@@ -96,6 +116,11 @@ export default function Work() {
               {desc}
             </div>
           </div>
+        </div>
+        <div className="resume">
+          <a href={resume} download="Raibagi_Tejas">
+            Resume
+          </a>
         </div>
       </div>
     </section>

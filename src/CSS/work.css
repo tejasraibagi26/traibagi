@@ -1,6 +1,7 @@
 #work {
-  width: 100vw;
+  width: auto;
   height: 100vh;
+  overflow: hidden;
 }
 
 #work .work-container {
@@ -55,6 +56,9 @@
 
 .work-container .work-details .left-titles ul .active {
   color: white;
+  border-left: 2px solid whitesmoke;
+  padding-left: 10px;
+  text-overflow: ellipsis;
 }
 
 .work-container .work-details .right-desc {
@@ -67,6 +71,28 @@
 .work-container .work-details .right-desc .details {
   color: white;
 }
+#work .work-container .resume {
+  margin-top: 40px;
+  padding: 10px;
+  width: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+  background-color: white;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: 100ms ease-in-out;
+}
+
+#work .work-container .resume:hover {
+  background-color: lightgray;
+}
+
+#work .work-container .resume a {
+  color: black;
+  text-decoration: none;
+}
 
 .text-transform {
   animation: other 1s ease-in-out;
@@ -75,6 +101,11 @@
 .text-transform-2 {
   animation: other 1s ease-in-out;
   animation-delay: 0.5s;
+}
+
+.text-transform-3 {
+  animation: other 1s ease-in-out;
+  animation-delay: 1s;
 }
 
 .hide {
@@ -119,5 +150,9 @@
 
   .work-container .work-details .left-titles {
     width: 40%;
+  }
+
+  #work .work-container .resume {
+    width: auto;
   }
 }

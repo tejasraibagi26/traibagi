@@ -15,24 +15,6 @@
   font-weight: bold;
   line-height: 1.0062em;
   color: white;
-  /* background: -webkit-linear-gradient(
-    to right,
-    #16222a 0%,
-    #3a6073 51%,
-    #16222a 100%
-  );
-  background: -moz-linear-gradient(
-    to right,
-    #16222a 0%,
-    #3a6073 51%,
-    #16222a 100%
-  );
-  background: linear-gradient(to right, #16222a 0%, #3a6073 51%, #16222a 100%);
-
-  background-clip: text;
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -moz-background-clip: text; */
   margin: 40px;
   display: flex;
 }
@@ -40,9 +22,8 @@
 #about .container .about-me {
   width: 75%;
   height: auto;
-  font-size: 2.2em;
+  font-size: 1.5em;
   text-align: center;
-  font-weight: bold;
   color: whitesmoke;
   line-height: 1;
   overflow: hidden;
