@@ -9,11 +9,9 @@ export default function About() {
       (entries) => {
         entries.forEach((entry) => {
           if (entry.isIntersecting) {
-            console.log("Yes");
             entry.target.classList.remove("hide");
             entry.target.classList.add("text-transform");
           } else {
-            console.log("No");
             entry.target.classList.add("hide");
             entry.target.classList.remove("text-transform");
           }

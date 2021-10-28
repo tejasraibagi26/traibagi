@@ -1,97 +1,123 @@
 #work {
-  background-color: whitesmoke;
+  width: 100vw;
   height: 100vh;
-  width: 100%;
 }
 
-#work .work__container {
-  position: absolute;
+#work .work-container {
+  width: 100%;
+  height: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
-  height: 100%;
-  width: 100%;
-  padding: 20px;
+  justify-content: center !important;
+  align-items: center !important;
+  overflow-x: hidden;
+  background-color: #121212;
 }
 
-#work .work__container .work__title {
-  font-size: 5em;
+.work-container .work-title {
+  font-size: 5rem;
   font-weight: bold;
-  background: -webkit-linear-gradient(
-    to top right,
-    #0f0c29 0%,
-    #302b63 50%,
-    #24243e 100%
-  );
-  background: -moz-linear-gradient(
-    to top right,
-    #0f0c29 0%,
-    #302b63 50%,
-    #24243e 100%
-  );
-  background: linear-gradient(
-    to top right,
-    #0f0c29 0%,
-    #302b63 50%,
-    #24243e 100%
-  );
-  background-clip: text;
-  background-size: 300%;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
+  color: white;
+  margin-bottom: 40px;
 }
 
-#work .work__container .showcase {
+.work-container .work-details {
+  width: 75%;
+  height: auto;
   display: flex;
   flex-direction: row;
-  justify-content: start;
-  align-items: start;
-  height: 100%;
-  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
-#work .work__container .showcase .showcase__container {
-  width: 100%;
+.work-container .work-details .left-titles {
+  width: 30%;
   height: 100%;
 }
 
-#work .work__container .showcase .showcase__container .showcase__item {
-  width: 100%;
+.work-container .work-details .left-titles {
+  font-size: 1.2em;
+  color: gray;
+}
+
+.work-container .work-details .left-titles ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.work-container .work-details .left-titles ul li {
+  cursor: pointer;
+  width: 70%;
+  margin: 10px;
+  line-break: strict;
+}
+
+.work-container .work-details .left-titles ul .active {
+  color: white;
+}
+
+.work-container .work-details .right-desc {
+  width: 70%;
   height: 100%;
-  position: relative;
   display: flex;
   flex-direction: column;
-  justify-content: start;
-  align-items: start;
 }
 
-#work .work__container .showcase .showcase__container .img img {
-  width: 80%;
-  height: 90%;
-  object-fit: contain;
-  margin-left: 20px;
+.work-container .work-details .right-desc .details {
+  color: white;
 }
 
-.animated {
-  animation: fadeIn 1s ease-in-out;
+.text-transform {
+  animation: other 1s ease-in-out;
+}
+
+.text-transform-2 {
+  animation: other 1s ease-in-out;
+  animation-delay: 0.5s;
 }
 
 .hide {
   visibility: hidden;
 }
 
-.animation-delay-1s {
-  animation-delay: 1s;
+@keyframes other {
+  0% {
+    opacity: 0;
+    transform-origin: center;
+    transform: scale(0.5);
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+    transform: translateY(0px);
+  }
+}
+
+.fadeIn {
+  animation: fadeIn 1s ease-in-out;
 }
 
 @keyframes fadeIn {
   0% {
     opacity: 0;
-    transform: translateX(-20vh);
   }
   100% {
     opacity: 1;
-    transform: translateX(0px);
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .work-container .work-title {
+    font-size: 3em;
+  }
+
+  .work-container .work-details {
+    width: 90%;
+  }
+
+  .work-container .work-details .left-titles {
+    width: 40%;
   }
 }
